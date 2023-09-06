@@ -43,3 +43,22 @@ Vuelve a verificar el estado del servicio para asegurarte de que esté funcionan
   ```
 
 ¡Listo! Ahora deberías tener Canonical Livepatch instalado y funcionando en tu sistema Linux.
+
+
+Complemento:
+
+Chkrootkit, una solución?
+
+Canonical, tal vez consciente de estas amenazan ha dispuesto en sus repositorios un programa que corrige o nos avisa de los posibles rootkits que habiten en nuestro sistema. La aplicación es heredada de Debian pero igualmente disponible y funcional que en la distribución madre.
+
+Para instalarlo sólo tenemos que ir a nuestra terminal o en synaptic y escribir
+  ```bash
+  sudo apt-get install chkrootkit
+  ```
+
+Esto instalará el programa, la única pega que tiene es que no tiene una interfaz gráfica por lo que cada vez que se quiera usar habrá que irse a la terminal y escribir
+  ```bash
+  sudo chkrootkit
+  ```
+
+Esto ejecutará el análisis y os informará si vuestro equipo está o no está infectado. Si llegara a estar infectado, sólo queda la búsqueda en Google del rootkit y su solución ya que es muy difícil que un programa te solucione los rootkits, ya sea en Windows, en Mac o en Ubuntu.
